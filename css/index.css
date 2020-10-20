@@ -1,0 +1,413 @@
+/* Universell styling ------ */
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-family: 'PT Serif', serif;
+    font-size: 2.5rem;
+    line-height: 4rem;
+    letter-spacing: 0.25rem;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-family: 'PT Serif', serif;
+    font-size: 2rem;
+    line-height: 3rem;
+    letter-spacing: 0.25rem;
+    margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 800px) {
+    h1 {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+}
+
+h3 {
+    font-family: 'Proxima Nova', sans-serif;
+    letter-spacing: 0.10rem;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+}
+
+p {
+    font-family: 'Proxima Nova', sans-serif;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+}
+
+a {
+    font-family: 'Proxima Nova', sans-serif;
+    color: black;
+    font-weight: bold;
+}
+
+/* Header ------ */
+
+header {
+    display: flex;
+    height: 70px;
+    flex: 1;
+    align-items: center;
+    padding: 0px 20px 0px 20px;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.headerlink {
+    margin-right: 30px;
+    font-family: 'Proxima Nove', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 0.20rem;
+}
+
+.headerlink:hover, .headerlink:focus {
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+    transition: 0.3s;
+}
+
+/* Hero ------ */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 95vh;
+    min-height: 700px;
+    background-image: url(../Bilder/Fjell.png);
+    background-position: center;
+    background-size: cover;
+    margin-top: -70px;
+    color: white;
+}
+
+.hero-container {
+    display: flex;
+    width: 80%;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.tittel {
+    flex: 2;
+    padding: 50px;
+}
+
+.booking {
+    flex: 1;
+    align-content: center;
+    justify-content: center;
+}
+
+.booking-rad {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.dato-boks {
+    flex: 1;
+    border: 1px solid white;
+    margin-right: 10px;
+    flex-direction: column;
+}
+
+.dato-tittel {
+    display: flex;
+    flex: 1;
+    padding: 10px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.datoskrift {
+    display: flex;
+    flex-direction: column;
+    min-height: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.705);
+}
+
+.dato-tittel h2 {
+    font-size: 1.2rem;
+    font-family: 'Proxima Nova', sans-serif;
+    font-weight: 800;
+    color: black;
+    margin: 0;
+}
+
+.datoskrift h3 {
+    font-size: 1.75rem;
+    margin-bottom: 15px;
+}
+
+.valg-boks {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    height: 40px;
+    border: 1px solid white;
+    margin-right: 10px;
+    padding: 0px 10px 0px 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.705);
+}
+
+.valg-boks p {
+    margin-right: auto;
+    margin-bottom: 0px;
+}
+
+.valg-boks:hover {
+    background: rgba(255, 255, 255, 0.281);
+    transition: 0.2s;
+}
+
+.booking-knapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    height: 70px;
+    background-color: white;
+    margin-right: 10px;
+    margin-top: 15px;
+    padding: 0px 10px 0px 10px;
+    color: rgb(0, 0, 0);
+    font-family: 'Proxima Nova',sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.booking-knapp:hover {
+    background-color: rgba(0, 0, 0, 0.63);
+    box-sizing: border-box;
+    border: 1px solid white;
+    color: white;
+    transition: 0.2s;
+}
+
+.jump-section img{
+    height: 50px;
+    margin-bottom: -5px;
+}
+
+.hotellbeskrivelse {
+    display: flex;
+    min-height: 80vh;
+}
+
+.tekstcontainer {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.tekstboks {
+    align-content: center;
+    max-width: 400px;
+}
+
+.bilde {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+}
+
+.bilde img {
+    object-fit: cover;
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .hotellbeskrivelse{
+        flex-direction: column-reverse;
+    }
+}
+
+/* Queriees for å wrappe tittel og booking boks*/
+
+@media only screen and (max-width: 800px) {
+    .hero-container {
+        flex-direction: column;
+    }
+
+    .tittel {
+        flex: 0;
+    }
+
+    .tittel h1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .tittel {
+        flex: 1;
+    }
+
+    .hero-container {
+        width: 90%;
+    }
+}
+
+/* Mobil */
+@media only screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    .headerlink {
+        margin: 10px;
+    }
+
+    .linker {
+        display: flex;
+        flex: 1;
+    }
+    
+    .logo {
+        margin: 20px;
+    }
+
+    .hero {
+        height: 90vh;
+        padding-top: 50px;
+    }
+}
+
+/* Resturantseksjon */
+.resturant-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    background-image: url(../Bilder/Resturant.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.resturant-container {
+    display: flex;
+    margin: 20px;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.829);
+    color: white;
+}
+
+.resturant-col {
+    flex: 0.75;
+}
+
+.divider {
+    height: 400px;
+    width: 1px;
+    margin: 0px 40px 0px 40px;
+    background-color: white;
+}
+
+@media only screen and (max-width: 800px) {
+    .resturant-container {
+        flex-direction: column;
+    }
+
+    .divider {
+        width: 100%;
+        height: 1px;
+        margin: 40px 0px 40px 0px;
+    }
+}
+
+.resturantoversikt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: black;
+}
+
+.oversikt-rad {
+    display: flex;
+    margin-bottom: 10px;
+    max-width: 1140px;
+}
+
+.oversikt-col {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin: 2px;
+    background-color: white;
+    padding: 20px;
+}
+
+.bilde-col img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+}
+
+.bilde-col {
+    display: flex;
+    margin: 2px;
+    flex: 1;
+}
+
+@media only screen and (max-width: 800px) {
+    .oversikt-rad {
+        flex-direction: column;
+    }
+}
+
+footer {
+    display: flex;
+    min-height: 300px;
+    padding: 40px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border-top: 1px solid white;
+}
+
+@media only screen and (max-width: 800px) {
+    footer {
+        flex-direction: column;
+    }
+}
+
+footer p {
+    margin-bottom: 0px;
+}
+
+footer a {
+    color: white;
+}
+
+.footer-col {
+    margin-right: 40px;
+}
+
+
+
+
+
+
