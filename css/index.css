@@ -192,7 +192,9 @@ header {
     font-family: 'Proxima Nova',sans-serif;
     font-weight: bold;
     text-transform: uppercase;
-}
+    text-decoration: none;
+    
+} 
 
 .booking-knapp:hover {
     background-color: rgba(0, 0, 0, 0.63);
@@ -200,6 +202,10 @@ header {
     border: 1px solid white;
     color: white;
     transition: 0.2s;
+}
+
+.booking-knapp:active {
+    background-color: rgb(230, 34, 34);
 }
 
 .jump-section img{
@@ -363,7 +369,6 @@ header {
 .bilde-col img {
     object-fit: cover;
     width: 100%;
-    height: 100%;
     object-position: center;
 }
 
@@ -373,9 +378,9 @@ header {
     flex: 1;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) { /*This i the spooky query*/
     .oversikt-rad {
-        flex-direction: column;
+        display: block;
     }
 }
 
