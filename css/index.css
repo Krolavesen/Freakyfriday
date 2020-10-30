@@ -204,10 +204,6 @@ header {
     transition: 0.2s;
 }
 
-.booking-knapp:active {
-    background-color: rgb(230, 34, 34);
-}
-
 .jump-section img{
     height: 50px;
     margin-bottom: -5px;
